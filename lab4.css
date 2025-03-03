@@ -1,0 +1,70 @@
+/* Alternative Lab 4 - CSS Styles */
+
+body {
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e8e8e8;
+    color: #222;
+}
+
+header {
+    background-color: #842dad;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    font-size: 24px;
+}
+
+nav {
+    background-color: #34495e;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #1abc9c;
+    color: white;
+}
+
+section {
+    margin: 30px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #2c3e50;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 40px;
+    font-size: 14px;
+}
