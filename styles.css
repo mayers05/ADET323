@@ -4,20 +4,19 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Lato", sans-serif;
+    color: #e0e0e0; /* Light gray text */
 }
 
-/* Dark Theme Background */
+/* Dark Background */
 body {
-    background-color: #121212; /* Deep dark gray */
-    color: #e0e0e0; /* Light gray for readability */
+    background-color: #121212; /* Dark grayish blue */
 }
 
 /* Navigation Bar */
 nav {
-    background-color: #1e1e1e; /* Dark gray */
+    background-color: #1e2a38; /* Dark blue */
     padding: 12px 0;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 nav ul {
     list-style: none;
@@ -28,21 +27,213 @@ nav ul li {
 }
 nav ul li a {
     text-decoration: none;
-    color: #e0e0e0; /* Soft white */
+    color: #a8c4e4; /* Soft blue */
     font-weight: normal;
     transition: color 0.3s;
 }
 nav ul li a:hover {
-    color: #4a90e2; /* Subtle blue highlight */
+    color: #6cb4ee; /* Lighter blue */
 }
 
 /* Profile Section */
 .profile {
     text-align: center;
-    margin: 25px 0;
+    margin: 20px 0;
 }
 .profile img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 2px solid #4a90e2
+    border: 2px solid #6cb4ee; /* Soft blue border */
+    object-fit: cover;
+}
+.profile input {
+    display: block;
+    margin: 8px auto;
+    padding: 6px;
+    width: auto;
+    border: none;
+    background: none;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #a8c4e4;
+}
+
+/* Content Section */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 20px;
+}
+.box {
+    width: 75%;
+    padding: 20px;
+    border: 1px solid #3a506b; /* Cool dark teal */
+    border-radius: 6px;
+    text-align: center;
+    background-color: #1e2a38; /* Dark blue */
+}
+
+/* Subjects / Activities Section */
+.subjects,
+.activities {
+    width: 75%;
+    max-width: 700px;
+    text-align: center;
+    background-color: #1e2a38;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 15px auto;
+}
+
+/* Centering the Search Bar */
+#searchBar {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    border: 1px solid #6cb4ee;
+    border-radius: 6px;
+    font-size: 16px;
+    margin: 15px auto; /* Centers it horizontally */
+    display: block;
+    background-color: #1e2a38;
+    color: #e0e0e0;
+    outline: none;
+    transition: 0.3s;
+    text-align: center; /* Centers text inside the input */
+}
+
+#searchBar:focus {
+    border-color: #00bcd4;
+    box-shadow: 0 0 6px rgba(0, 188, 212, 0.5);
+}
+
+/* Button Styling */
+#subjectsButton {
+    background: #00bcd4;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: normal;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+#subjectsButton:hover {
+    background: #0097a7;
+}
+
+/* Activities Section */
+.activities h2 { 
+    color: #e0e0e0;
+    margin-bottom: 12px;
+}
+
+/* Lab Buttons Layout */
+.lab-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Lab Buttons Styling */
+.lab-button {
+    text-decoration: none;
+    background-color: #00bcd4;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 5px;
+    font-weight: normal;
+    transition: background 0.3s;
+    font-size: 14px;
+}
+
+.lab-button:hover {
+    background-color: #0097a7;
+}
+
+/* Table Container */
+.table-container {
+    width: 90%;
+    max-width: 700px;
+    margin: 20px auto;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #1e2a38;
+}
+
+/* Table Header */
+.semester-header {
+    background-color: #3a506b;
+    color: #e0e0e0;
+    font-weight: bold;
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Table */
+.subject-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    color: #e0e0e0;
+}
+
+/* Table Rows */
+.subject-table tr {
+    border-bottom: 1px solid #3a506b;
+}
+
+.subject-table td {
+    padding: 12px;
+}
+
+/* Subject Codes */
+.subject-code {
+    font-weight: 600;
+    color: #6cb4ee;
+}
+
+/* Subject Titles */
+.subject-title {
+    color: #a8c4e4;
+}
+
+/* Units */
+.subject-units {
+    font-style: italic;
+    color: #b0bec5;
+    text-align: right;
+}
+
+/* Hide/Show Subjects */
+.hidden {
+    display: none;
+}
+
+/* Hide Subjects Button */
+.hide-button {
+    display: block;
+    margin: 15px auto;
+    padding: 10px 14px;
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.hide-button:hover {
+    background-color: #00bcd4;
+}
