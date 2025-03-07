@@ -1,0 +1,48 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+/* Dark Theme Background */
+body {
+    background-color: #121212; /* Deep dark gray */
+    color: #e0e0e0; /* Light gray for readability */
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #1e1e1e; /* Dark gray */
+    padding: 12px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #e0e0e0; /* Soft white */
+    font-weight: normal;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: #4a90e2; /* Subtle blue highlight */
+}
+
+/* Profile Section */
+.profile {
+    text-align: center;
+    margin: 25px 0;
+}
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #4a90e2
